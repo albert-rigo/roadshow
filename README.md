@@ -15,6 +15,7 @@ The project was earlier called [Praqma training RoadShow](https://github.com/pra
 
 * You only need a JVM to run Gradle for playing with the basic setup on your own machine.
 
+
 ## Gradle as build tool
 
 The project uses Gradle as build tool, and as such only requires you have JVM to run gradle.
@@ -35,6 +36,7 @@ The _Gradle wrapper script_ (`gradlew` and `gradlew.bat`) is part of the project
 
 This could some of the things you would like to do in your Jenkins jobs.
 
+
 ### Build and test
 
 Build source, compile unit test and run unit test:
@@ -46,6 +48,7 @@ Build _war_ file that can be deployed to Tomcat, and reports unit test results t
 To enable manual build support on a Jenkins job, use the special `jenkinstest` task instead of `test` to ensure new timestamps on junit outpu files that the Jenkins JUnit plugin requires.
 
 `./gradlew war jenkinstest`
+
 
 ### Cleaning
 
@@ -77,6 +80,7 @@ There are different analysis available:
 They all have both a _Main_ and _Test_ task, that analysis respectively main sources or test sources.
 For example `pmdMain` or `findbugsTest`.
 
+
 ### Checking
 
 The built in gradle tasks `check` will also run all of the static analysis tools goals, including the `test` tasks which is unit test.
@@ -89,8 +93,6 @@ The built in gradle tasks `check` will also run all of the static analysis tools
 You can generate javadoc on the sources with:
 
 `./gradlew javadoc`
-
-
 
 
 ## Customize the project
