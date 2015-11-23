@@ -14,7 +14,7 @@ public class TestCalculatorModel {
     @BeforeClass
     public static void createModel() {
         model = new CalculatorModelImpl();
-        expectedResult = new Double(7.5);
+        expectedResult = new Double(1.5);
     }
 
     @Test
